@@ -453,14 +453,16 @@
           </div>
           <div class="email-input-block">
             <h3 class="email-input-title">Подпишитесь на рассылку</h3>
-            <div>
-              <form action="" class="footer-email-form">
-                <input type="email" name="email-input" class="email-input" />
-                <button type="submit" class="btn-email-input">
-                  Подписаться
-                </button>
-              </form>
-            </div>
+            <form action="" class="footer-email-form">
+              <input
+                type="email"
+                name="email-input"
+                class="email-input"
+                placeholder="e-mail"
+                required
+              />
+              <button type="submit" class="btn-email-input">Подписаться</button>
+            </form>
           </div>
         </div>
       </div>
@@ -475,7 +477,29 @@
               <use href="./img/sprite.svg#btn-close"></use>
             </svg>
           </button>
-          <p class="modal-description">А оно вам надо?</p>
+          <form action="" class="modal-form">
+            <input
+              type="name"
+              name="user-name"
+              class="modal-user-input"
+              required
+            />
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-user-input"
+              required
+            />
+            <input type="email" name="user-email" class="modal-user-input" />
+            <textarea name="user-text" id=""></textarea>
+            <input
+              type="checkbox"
+              name="user-policy"
+              value="accept-policy"
+              class="modal-form-policy"
+            />
+            <button type="submit" class="btn-modal-form-send">Отправить</button>
+          </form>
         </div>
       </div>
     </div>
