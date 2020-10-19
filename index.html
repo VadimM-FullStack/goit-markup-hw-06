@@ -73,7 +73,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="button-big-send" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -458,10 +458,10 @@
                 type="email"
                 name="email-input"
                 class="email-input"
-                placeholder="e-mail"
+                placeholder="E-mail"
                 required
               />
-              <button type="submit" class="btn-email-input">Подписаться</button>
+              <button type="submit" class="button-big-send">Подписаться</button>
             </form>
           </div>
         </div>
@@ -472,11 +472,6 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <div class="modal">
-          <button class="btn-close-modal" type="button" data-modal-close>
-            <svg class="btn-close-svg">
-              <use href="./img/sprite.svg#btn-close"></use>
-            </svg>
-          </button>
           <form action="" class="modal-form">
             <input
               type="name"
@@ -498,8 +493,13 @@
               value="accept-policy"
               class="modal-form-policy"
             />
-            <button type="submit" class="btn-modal-form-send">Отправить</button>
+            <button type="submit" class="button-big-send">Отправить</button>
           </form>
+          <button class="button-close-modal" type="button" data-modal-close>
+            <svg class="button-close-svg">
+              <use href="./img/sprite.svg#btn-close"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
