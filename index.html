@@ -73,7 +73,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button-big-send" type="button" data-modal-open>
+          <button class="button-service" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -82,7 +82,7 @@
       <!-- FEATURES -->
       <section class="features section">
         <div class="container">
-          <h2 class="title" hidden>Наши преимущества</h2>
+          <h2 class="title visually-hidden">Наши преимущества</h2>
           <ul class="features-list">
             <li class="features-list-item list">
               <h3 class="features-subtitle">Внимание к деталям</h3>
@@ -461,7 +461,7 @@
                 placeholder="E-mail"
                 required
               />
-              <button type="submit" class="button-big-send">Подписаться</button>
+              <button type="submit" class="button-service">Подписаться</button>
             </form>
           </div>
         </div>
@@ -479,56 +479,75 @@
           </button>
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="modal-input-wrapper">
-            <label for="user-name" class="user-input-label">Имя</label>
-            <input
-              type="text"
-              name="user-name"
-              id="user-name"
-              class="modal-user-input"
-              placeholder="NAME"
-              required
-            />
-            <label for="user-phone" class="user-input-label">Телефон</label>
-            <input
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              class="modal-user-input"
-              placeholder="PHONE"
-              required
-            />
-            <label for="user-email" class="user-input-label">Почта</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              class="modal-user-input"
-              placeholder="EMAIL"
-              required
-            />
-            <label for="user-comment" class="user-input-label"
+            <div class="modal-form-item">
+              <label for="user-name" class="user-input-label">Имя</label>
+              <div class="modal-field-wrapper">
+                <input
+                  class="modal-user-input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  required
+                />
+                <svg class="modal-user-svg">
+                  <use href="./img/sprite.svg#person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-item">
+              <label class="user-input-label" for="user-phone">Телефон</label>
+              <div class="modal-field-wrapper">
+                <input
+                  class="modal-user-input"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                  required
+                />
+                <svg class="modal-user-svg">
+                  <use href="./img/sprite.svg#phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-item">
+              <label class="user-input-label" for="user-email">Почта</label>
+              <div class="modal-field-wrapper">
+                <input
+                  class="modal-user-input"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  required
+                />
+                <svg class="modal-user-svg">
+                  <use href="./img/sprite.svg#email"></use>
+                </svg>
+              </div>
+            </div>
+            <label class="user-input-label" for="user-comment"
               >Комментарий</label
             >
             <textarea
+              class="modal-user-comment"
               name="user-comment"
               id="user-comment"
-              class="modal-user-comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
           <div class="modal-check-box">
             <input
+              class="modal-form-policy visually-hidden"
               type="checkbox"
               name="user-policy"
+              id="checkbox-policy"
               value="accept-policy"
-              class="modal-form-policy"
             />
-            <p class="modal-user-agreement">
-              Соглашаюсь с рассылкой и принимаю
+            <label for="checkbox-policy" class="modal-policy-label">
+              Соглашаюсь с рассылкой и принимаю&nbsp;
               <a class="modal-contract" href="">Условия договора</a>
-            </p>
+            </label>
           </div>
-          <button type="submit" class="button-big-send">Отправить</button>
+          <button type="submit" class="button-service modal">Отправить</button>
         </form>
       </div>
     </div>
